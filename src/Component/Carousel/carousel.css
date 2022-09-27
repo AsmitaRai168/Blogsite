@@ -1,0 +1,42 @@
+.maincontainer{  
+    
+    margin-top: 2em;
+    
+}
+.main-editorpickTrending-container{
+    column-gap: 8em;
+}
+  
+.details{
+    display: flex;
+    justify-content: center;
+   
+ 
+}
+.left-container{
+    display: flex;
+}
+.editorpick-container{
+    margin-top: 1em;
+}
+
+.imagefromCarousel{
+  width: 35em;
+}
+.DescriptionContainer{
+    
+    background-color: gainsboro;
+
+ 
+    
+    
+}
+.DescriptionContainer{
+    display: block;
+    width: 25em;
+   
+    font-size: 18px;
+
+}
+
+

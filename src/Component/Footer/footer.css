@@ -1,0 +1,26 @@
+.footermaincontainer{
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    margin-top: 1em;
+}
+
+.desnews{
+    display: block;
+    width: 30em;
+
+}
+input[type=email] {
+  
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 2em;
+    
+
+  }
+  .emailcontainer{
+    display: flex;
+  }
+  
