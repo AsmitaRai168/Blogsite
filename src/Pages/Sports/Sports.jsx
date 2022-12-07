@@ -2,7 +2,9 @@ import React from 'react'
 
 function Sports() {
   return (
-    <div>Sports</div>
+   <>
+   <h3>sports</h3>
+   </>
   )
 }
 

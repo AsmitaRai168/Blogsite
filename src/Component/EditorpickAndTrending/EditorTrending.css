@@ -1,43 +1,18 @@
-.editor-main-container{
+.EditorTrending-container{
     display: flex;
     padding: 2em;
-    gap:4em;
-
-}
-
-.editor{
-    display: flex;
+    justify-content: center;
+    column-gap: 4em;
     margin-top: 2em;
-    gap: 2em;
+
 }
-.imagefromeditor{
-    width: 20em;
+.editor-post{
+    display: flex;
     
+    margin-top: 1em;
     
 }
-.title1{
-    display: block;
-    width: 21em;
+.lefteditorlogo{
+    margin-left: 1.2em;
 }
-.deseditor{
-    display: block;
-    width: 20em;
 
-}
-.right-editor{
-    display: flex;
-    margin-top: 4em;
-}
-.imagefromeditor1{
-    width: 10em;
-}
-.title2{
-    display: block;
-    width: 10em;
-}
-.magefromeditor1{
-    width: 15em;
-}
-.right-container{
-    margin-top: 2em;
-}

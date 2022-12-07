@@ -1,0 +1,27 @@
+
+.business-container{
+    display: flex;
+    column-gap: 4.5em;
+}
+.businessimage{
+    width: 15em;
+}
+.businessnews{
+    display: block;
+    width: 20em;
+    
+
+}
+.btitle{
+    font-size: 18px;
+}
+.bdesp{
+     font-size: 13px;
+     font-size: 15px;
+    
+}
+.bdate{
+    font-size: 13px;
+    color: gray;
+
+}

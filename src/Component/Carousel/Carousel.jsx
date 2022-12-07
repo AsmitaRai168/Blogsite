@@ -11,23 +11,25 @@ const Carousel = ({ datafromcarousel = [] }) => {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      centerMode: true,
+      centerMode: false,
     };
     return (
         <>
           <Slider {...settings}>
             {datafromcarousel.map((each, index) => (
-              <div className="maincontainer">
-                <div className="innercontainer">
+              <div className="carauselmaincontainer">
+                <div className="carouselinnercontainer">
                   <div className="details">
-                  
-                    <figure>
+                  <div className="carouselimage">
+                  <figure>
                       <img
                         src={each.image}
                         className="imagefromCarousel"
                         alt="img1"
                       />
                     </figure>
+                  </div>
+                   
                               <div className="titiledescriptionContainer">
                               <div className="title">
                       <h3>{each?.imagelabel}</h3>

@@ -11,6 +11,7 @@
     width: 30em;
 
 }
+
 input[type=email] {
   
     padding: 12px 20px;
@@ -18,9 +19,12 @@ input[type=email] {
     box-sizing: border-box;
     border-radius: 2em;
     
+    
 
   }
   .emailcontainer{
     display: flex;
+    gap: 1em;
   }
+  
   

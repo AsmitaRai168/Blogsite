@@ -1,0 +1,19 @@
+
+.politicmaincontainer{
+    display: flex;
+
+}
+.politicimg{
+    width: 15em;
+}
+.politictitle{
+    font-size: 20px;
+}
+.politicsdes{
+    display: block;
+    width: 20em;
+}
+.polidate{
+    font-size: 13px;
+    color: gray;
+}

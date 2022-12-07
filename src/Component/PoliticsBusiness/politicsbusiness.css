@@ -1,0 +1,19 @@
+.PoliticsBusiness-Container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 2em;
+}
+.Politiclogo{
+    margin-left: 1.5em;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.businesslogo{
+    margin-left: 1.4em;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+
+}

@@ -1,0 +1,30 @@
+ .contact-logo{
+  color:darkgray;
+  margin-left: 3em;
+  font-family: Tahoma;
+  font-size: 20px;
+  text-decoration: underline;
+
+
+}
+.contact-detail-form-container{
+display:grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+margin: 4em;
+row-gap: 3em;
+
+
+
+}
+
+.contact-field{
+  width: 40em;
+  color: white;
+  padding: 2em;
+  border: none;
+  border-radius: 2em;
+  margin-top: 1em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+

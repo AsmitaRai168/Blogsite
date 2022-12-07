@@ -1,0 +1,17 @@
+
+.main-right-container{
+   display: flex;
+}
+
+.rightimage{
+    width: 10em;
+}
+
+.right-title{
+    display: block;
+    width: 15em;
+    color: gray;
+    font-size: 15px;
+
+}
+

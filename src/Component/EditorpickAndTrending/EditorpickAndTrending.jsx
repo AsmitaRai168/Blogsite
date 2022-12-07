@@ -1,70 +1,36 @@
 import React from 'react'
-
-
 import "./EditorTrending.css"
-const EditorpickAndTrending=({EditorpickData})=> {
-    
+import {EditorpickData,TrendingData} from '../../DummyData/DummyData'
+import Lefteditor from './Lefteditor';
+import RightEditor from './Righteditor';
+import Trending from './Trending';
+
+const EditorpickAndTrending=()=>{
+
   return (
     <>
-      
-          {EditorpickData.map((each,index)=>(
-            <div className='editor-main-container'>
-            
-              <div className='left-container'>
-               
-              <div className='editor'>
-
-                <div className='left-editor'>
-                <h1>Editor's Pick</h1>
-                <figure>
-                      <img
-                        src={each.image}
-                        className="imagefromeditor"
-                        alt="image"
-                      />
-                    </figure>
-                              
-                            
-                      <h3 className='title1'>{each?.imagelabel}</h3>
-                   
-                   
-                      <p className='deseditor'>{each?.details}</p>
-                    
-                </div>
-                <div className='right-editor'>
-                <figure>
-                      <img
-                        src={each.image}
-                        className="imagefromeditor1"
-                        alt="image"
-                      />
-                    </figure>
-                              
-                            
-                      <h3 className='title1'>{each?.imagelabel}</h3>
-                   
-                   
-                    
-                    
-                </div>
-
-
-                </div>
-               </div>
-
-
-              <div className='right-container'>
-                <h1>Trending</h1>
-              </div>
-
-                
-           
-            </div>
-              
-          ))}
+  <div className='EditorTrending-container'>
+    <div className='left-container'>
+      <h1 className='lefteditorlogo'>Editor pick</h1>
+      <div className='editor-post'>
+      <div className='left-editor-container'>
         
+        <Lefteditor EditorpickData={EditorpickData}/>
+      </div>
+      <div className='right-editor-container'>
+        
+        <RightEditor EditorpickData={EditorpickData}/>
+      </div></div>
+    </div>
+    <div className='right-container'>
+      <h1>Trending</h1>
+      <Trending TrendingData={TrendingData}/>
+    </div>
+  </div>
+  
+ 
     </>
-  )
-}
+ );
+};
 
-export default EditorpickAndTrending;
+export default EditorpickAndTrending

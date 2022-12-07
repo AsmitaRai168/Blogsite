@@ -3,10 +3,7 @@ const NavData=[
         label:"Home",
         url:"/",
     },
-    {
-        label:"Categories",
-        url:"/categories",
-    },
+   
     {
         label:"Business",
         url:"/business",
