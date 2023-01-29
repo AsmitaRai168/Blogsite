@@ -16,10 +16,10 @@ const NavData=[
         label:"Contact",
         url:"/contact",
     },
-    {
-        label:"Sports",
-        url:"/sports",
-    },
+    // {
+    //     label:"Sports",
+    //     url:"/sports",
+    // },
     {
         label:"LogIn",
         url:"/Login",

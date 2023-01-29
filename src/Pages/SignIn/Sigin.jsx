@@ -1,8 +1,31 @@
 import React from 'react'
+import { useState } from 'react';
 import "./Signin.css";
+import {useNavigate} from 'react-router-dom'
 const Sigin=()=> {
+  const[username,setUsername]=useState("")
+  const[password,setPassword]=useState("")
+  const[email,setEmail]=useState("")
+  const history=useNavigate()
+
+  const handleSignUp=async(e)=>{
+    e.preventDefault()
+   const response=await fetch('http://localhost:8000/api/user/sign-up',{
+      method:'post',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({username:username,password:password,email:email})
+    })
+    console.log(response.status,'response')
+   if(response.status===201){
+    history('/login')
+   }
+   if(response.status===400){
+    console.log(response.Response)
+   }
+  }
+
   return (
-    <div>
+    <div> 
     <div className="signup">
       <div className="signup-main-form">
         <h2 className="form-title">Sign up</h2>
@@ -22,6 +45,7 @@ const Sigin=()=> {
               autoComplete="off"
               placeholder="enter your name..."
               className="input-form"
+              onChange={(e)=>setUsername(e.target.value)}
             ></input>
          
            
@@ -39,6 +63,7 @@ const Sigin=()=> {
               autoComplete="off"
               placeholder="enter your email..."
               className="input-form"
+              onChange={(e)=>setEmail(e.target.value)}
             ></input>
           </div>
           <div className="form-group">
@@ -54,9 +79,10 @@ const Sigin=()=> {
               autoComplete="off"
               placeholder="enter your password..."
               className="input-form"
-            ></input>
+              onChange={(e)=>setPassword(e.target.value)}
+            />
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
             <div>
             <label className="label-form">Confirm Password:</label>
 
@@ -70,14 +96,10 @@ const Sigin=()=> {
               placeholder="confirm your password..."
               className="input-form"
             ></input>
-          </div>
+          </div> */}
 
           <div className="form-group form-button">
-            <input
-              type="submit"
-              value="signup"
-              className="form-submit"
-            ></input>
+             <button className='btn-formgroup' onClick={handleSignUp}>Sign up</button>
           </div>
         </form>
       </div>

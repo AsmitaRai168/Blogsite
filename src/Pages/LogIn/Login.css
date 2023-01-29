@@ -1,78 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-   
-
-}
-
-
 .email-form {
-  
   padding: 12px 20px;
   margin: 8px 0;
   border: none;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-
-
-  
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
-.passw{
- 
+.passw {
   padding: 12px 20px;
   margin: 8px 0;
   border: none;
 
- box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
-
-
+/* Give class name for button else call with classname with > sign for calling buttn inside particular div  */
 button {
-    
-    background-color:rgb(6, 6, 243) ;
-   text-align:center ;
+  background-color: rgb(6, 6, 243);
+  text-align: center;
   color: white;
-    gap:2em;
-    margin: 1em;
-    padding: 0.6em;
-    border: none;
-   
-    cursor: pointer;
-  }
-  .Login-container{
-    display:flex;
-    justify-content: center;
-   
-  }
-  .mainlogin-container{
-   
-    /* background: #d1f6a4; */
-    margin: 2em;
-    
-    opacity: 0.8;
-     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+  gap: 2em;
+  margin: 1em;
+  padding: 0.6em;
+  border: none;
 
-  }
-  .mainlogin-container:hover {
-    opacity: 1.0;
-  }
-  .login-image{
-    width: 25em;
-    height:25em;
-  } 
-    
-  
-.image-form-container{
-  display: flex;
- gap: 0.5em;
+  cursor: pointer;
 }
- 
-  .login-form-container{
-    margin-top: 1em;
-  }
-  .forgotpwd{
-    color:rgb(31, 31, 126);
-    font-size: 16px;
-  }
+.Login-container {
+  display: flex;
+  justify-content: center;
+}
+.mainlogin-container {
+  /* background: #d1f6a4; */
+  margin: 2em;
+
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.image-form-container>form{
+  padding-right: 2em;
+}
+.image-form-container>form>h1{
+  color: rgb(78, 77, 77);
+  letter-spacing: 0.1em;
+  line-height: 1em;
+}
+.mainlogin-container:hover {
+  opacity: 1;
+}
+.login-image {
+  width: 25em;
+  height: 25em;
+}
+
+.image-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container {
+  margin-top: 1em;
+}
+.forgotpwd {
+  color: rgb(31, 31, 126);
+  font-size: 16px;
+}
