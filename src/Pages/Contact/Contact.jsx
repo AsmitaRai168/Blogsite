@@ -40,7 +40,7 @@ function Contact() {
      <Messagewithlabel LabelMessage={"Message"} Type="text" labelHolder={"Write Something..."}/>
      </div>
 
-    <Textbutton   Type="submit"/>
+    <Textbutton   Type="submit"  />
 
     <div className='text'><h4>thank you for visiting our website</h4></div>
 

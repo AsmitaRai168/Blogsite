@@ -6,26 +6,27 @@
 }
 
 
-  
+   
 .details{
     display: flex;
     padding: 1em;
     text-align: center;
+    margin: 1em;
    
  
-}
+} 
 
 
 .imagefromCarousel{
   width: 35em;
 }
+.Description-text{
 
-.DescriptionContainer{
-    margin: auto;
-    background-color: gainsboro;
 
-    font-size: 18px;
-
+    background-color: aliceblue;
+    margin: 1em;
+   
 }
+
 
 

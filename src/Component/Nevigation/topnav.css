@@ -1,13 +1,22 @@
-
+.TopNav-main-Container{
+    margin-top: 2em;
+}
 .TopNavContainer{
 
     display: flex;
-   padding: 2em;
-   
+   justify-content: center;
+   justify-content: space-evenly;
 
 }
+.search-icon-main-container{
+    display: flex;
+    
+}
+/*
 .search-Container{
-margin-left: 30em;}
+display: flex;
+
+}
 .logoContainer{
     display: inline;
 }
@@ -19,4 +28,4 @@ margin-left: 30em;}
 
 
 
-
+ */

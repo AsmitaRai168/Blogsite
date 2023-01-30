@@ -7,6 +7,8 @@ import Business from "../Pages/Business/Business";
 import Contact from "../Pages/Contact/Contact";
 import Politics from "../Pages/Politics/Politics";
 import Sports from "../Pages/Sports/Sports";
+import Login from "../Pages/LogIn/Login";
+import Signin from "../Pages/SignIn/Sigin";
 
 
 
@@ -14,6 +16,7 @@ import Sports from "../Pages/Sports/Sports";
 const Routing=()=>{
     return(
         <>
+       
         
        <TopNav/>
     
@@ -26,6 +29,9 @@ const Routing=()=>{
           <Route path="/contact" element={<Contact />} />
           <Route path="/politics" element={<Politics />} />
           <Route path="/sports" element={<Sports />} />
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/Signin" element={<Signin/>}/>
+          
       </Routes>
         </>
     )

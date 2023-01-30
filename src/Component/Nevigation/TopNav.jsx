@@ -11,19 +11,25 @@ function TopNav() {
     <>
     <div className='TopNav-main-Container'>
       <div className='TopNavContainer'>
-        <div className='logoContainer'>
-          <h2 className='logoText'>My Blog</h2></div>
 
-          <div className='search-Container'>
-            <InputField inputType={"text"} setPlaceholder={"Search..."}/>
+        <div className='logoContainer'>
+          <h2 className='logoText'>My Blog</h2>
           </div>
+<div className='search-icon-main-container'>
+<div className='search-Container'>
+            <InputField inputType={"text"} setPlaceholder={"Search..."}/>
+            </div>
+          
           <div className='icon-Container'>
           <ButtonWithIcon
            icon={<FiSearch fontSize={"large"} color="white" />}
-           
-          />
-
+           />
           </div>
+</div>
+          
+
+          
+          
           
         
       </div>

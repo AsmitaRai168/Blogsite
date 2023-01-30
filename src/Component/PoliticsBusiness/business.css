@@ -1,7 +1,8 @@
 
 .business-container{
     display: flex;
-    column-gap: 4.5em;
+   column-gap: 2em;
+  
 }
 .businessimage{
     width: 15em;

@@ -35,7 +35,7 @@ const Carousel = ({ datafromcarousel = [] }) => {
                       <h3>{each?.imagelabel}</h3>
                     </div>
                     <div className="DescriptionContainer">
-                      <p>{each?.details}</p>
+                      <p className="Description-text">{each?.details}</p>
                     </div>
 
                               </div>

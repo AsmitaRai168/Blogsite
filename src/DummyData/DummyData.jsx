@@ -4,8 +4,12 @@ import img3 from "../Assests/img3.jpg";
 import image5 from "../Assests/image5.jpg";
 import image7 from "../Assests/image7.jpg";
 import image9 from "../Assests/image9.jpg";
+import loginpic from "../Assests/logpic.jpg"
 
-
+const LoginData=[{
+    image:loginpic,
+},
+]
  const carouselData=[
     {
         image:img1,
@@ -106,10 +110,11 @@ const PoliticsBusinesData=[
          date:"july 14",
      
     },
+    
 ]
-   
+  
   
 
 
 
-export {carouselData,EditorpickData,TrendingData,PoliticsBusinesData};
+export {carouselData,EditorpickData,TrendingData,PoliticsBusinesData,LoginData};

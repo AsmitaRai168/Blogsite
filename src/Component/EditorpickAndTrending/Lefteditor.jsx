@@ -13,12 +13,15 @@ const Lefteditor=({EditorpickData=[]})=> {
         className="editorimage"
         alt='image5'
 />    </figure>
+<div className='editdese'>
 <div className='editortitle'>
     <h2>{each?.title}</h2>
 </div>
 <div className='deseditor'>
     <p>{each?.des}</p>
 </div>
+</div>
+
 </div>
 
 ))}

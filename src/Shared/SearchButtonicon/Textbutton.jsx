@@ -9,7 +9,7 @@ const Textbutton=({sendMessage})=> {
         {sendMessage}
     </div>
     <div className='send-btn-msg'>
-        <button className='sendmsg'>SendMessage</button>
+        <button className='sendmsg' ><h3>SendMessage</h3></button>
     </div>
 
    </div>

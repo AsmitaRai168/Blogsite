@@ -1,15 +1,16 @@
 
 .editorimage{
-    width: 20em;
+    width: 29em;
 }
 .editortitle{
     
     font-size: 10px;
-    margin-left: 2em;
+   
 
 }
-.deseditor{
-    width: 22em;
-    margin-left: 1.5em;
+.editdese{
+   display: block;
+   margin-right: 4em;
 }
+
 

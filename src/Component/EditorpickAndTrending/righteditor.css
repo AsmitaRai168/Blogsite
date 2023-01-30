@@ -1,6 +1,7 @@
 
 .main-right-container{
    display: flex;
+   background-color: aqua;
 }
 
 .rightimage{
