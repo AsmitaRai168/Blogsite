@@ -1,11 +1,11 @@
-.email-form {
+ .EmaiL-form{
   padding: 12px 20px;
   margin: 8px 0;
   border: none;
+border-radius: none;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-}
-
+} 
 .passw {
   padding: 12px 20px;
   margin: 8px 0;
@@ -15,7 +15,7 @@
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 /* Give class name for button else call with classname with > sign for calling buttn inside particular div  */
-button {
+.Button-login {
   background-color: rgb(6, 6, 243);
   text-align: center;
   color: white;

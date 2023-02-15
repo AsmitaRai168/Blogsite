@@ -10,6 +10,7 @@
 }
 .search-icon-main-container{
     display: flex;
+    gap:1em;
     
 }
 /*

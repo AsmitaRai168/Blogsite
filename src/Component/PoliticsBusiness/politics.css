@@ -1,17 +1,12 @@
-.rightpolitics{
-    
-    display: flex;
-    flex-direction: column;
-    margin-left: 2em;
-}
 .politicmaincontainer{
-    display: flex;
-
+display: flex;
 }
+ 
 .politicimg{
     width: 15em;
+   
 }
-.politictitle{
+ .politictitle{
     font-size: 20px;
 }
 .politicsdes{
@@ -20,5 +15,5 @@
 }
 .polidate{
     font-size: 13px;
-    color: gray;
-}
+    color: gray; 
+} 

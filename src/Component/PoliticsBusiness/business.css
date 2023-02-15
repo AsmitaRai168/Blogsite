@@ -1,12 +1,15 @@
-
 .business-container{
-    display: flex;
-   column-gap: 2em;
-  
-}
+display: flex;
+column-gap: 4em;
+
+
+
+} 
+
 .businessimage{
     width: 15em;
 }
+
 .businessnews{
     display: block;
     width: 20em;
@@ -25,4 +28,4 @@
     font-size: 13px;
     color: gray;
 
-}
+} 

@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import "./Signin.css";
+import "./Signup.css";
 import {useNavigate} from 'react-router-dom'
-const Sigin=()=> {
+const Signup=()=> {
   const[username,setUsername]=useState("")
   const[password,setPassword]=useState("")
   const[email,setEmail]=useState("")
@@ -23,6 +23,7 @@ const Sigin=()=> {
     console.log(response.Response)
    }
   }
+  
 
   return (
     <div> 
@@ -102,6 +103,7 @@ const Sigin=()=> {
              <button className='btn-formgroup' onClick={handleSignUp}>Sign up</button>
           </div>
         </form>
+       
       </div>
     </div>
   </div>
@@ -109,4 +111,4 @@ const Sigin=()=> {
   )
 }
 
-export default Sigin
+export default Signup

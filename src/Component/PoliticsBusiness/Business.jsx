@@ -14,6 +14,9 @@ import "./business.css"
                     alt="imag" />
                 </figure>
             </div>
+           
+
+            
             <div className='rightbusiness'>
             <div className='businesstitle'>
                 <h1 className='btitle'>{each?.titles}</h1>
@@ -23,9 +26,10 @@ import "./business.css"
             </div>
             <div className='businessate'>
                 <h3 className='bdate'>{each?.date}</h3>
-            </div></div>
+            </div></div></div>
+            
         </div>
-    </div>
+   
 ))
     
 

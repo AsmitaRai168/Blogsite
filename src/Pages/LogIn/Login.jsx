@@ -1,29 +1,41 @@
-import React, { useState } from "react";
-import { IconName } from "react-icons/fc";
+import React, { useState} from "react";
+import {useNavigate} from 'react-router-dom'
+
 import loginImage from "../../Assests/logpic.png";
 
-import { LoginData } from "../../DummyData/DummyData";
 import "./Login.css";
-const Login = ({ setLoginImage }) => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+ 
 
-  const submitForm = (e) => {
+  const navigate=useNavigate()
+  const submitForm =async(e) => {
+   
     e.preventDefault();
-    const data={
-      email:email,
-      password:password
-    }
-   const response=  fetch("http://localhost:8000/api/user/sign-in", {
+    
+   const response=await  fetch("http://localhost:8000/api/user/login", {
       method: "post",
       headers: { "Content-Type": "application/json" },
-      body:JSON.stringify({data}),
-    });
-    console.log(response,'response')
+      body:JSON.stringify({email:email,password:password}),
+    })
+     console.log( response.status,'response')
+    
+   
+     if(response.status===200){
+      navigate('/')
+     }
+    
+    
+
+  
+   
   };
+  
 
   return (
     <>
+    
       <div className="Login-container">
         <div className="mainlogin-container">
           <div className="image-form-container">
@@ -42,9 +54,9 @@ const Login = ({ setLoginImage }) => {
                 <br></br>
                 <input
                   type="text"
-                  name="email"
+                  name="Email"
                   autoComplete="off"
-                  className="email-form"
+                  className="EmaiL-form"
                   placeholder="enter your email..."
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -63,7 +75,7 @@ const Login = ({ setLoginImage }) => {
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
-              <button type="submit">Login</button>
+              <button type="submit" className="Button-login" onClick={submitForm} >Login</button>
               <label className="forgotpwd">forgot password?</label>
             </form>
           </div>
