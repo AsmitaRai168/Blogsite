@@ -1,10 +1,10 @@
 import React from 'react'
 import "./buttonNav.css"
-import { NavLink } from "react-router-dom";
-
-
-function ButtonNav({NavData}){
-  
+  import { NavLink} from "react-router-dom";
+import {useState} from 'react';
+export const Context=React.createContext();
+const ButtonNav=({NavData})=>{
+ 
   return (
    
     <>
@@ -14,7 +14,13 @@ function ButtonNav({NavData}){
           <NavLink className={"navlinkClass"} to={each.url} key={index}>
             {each.label}
           </NavLink>
+         
         ))}
+              <NavLink to ="/login">
+                login
+              </NavLink>
+              
+              <NavLink to ="/Signup">Signup</NavLink>
       </div>
     </div>
 

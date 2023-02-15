@@ -20,13 +20,6 @@ const NavData=[
     //     label:"Sports",
     //     url:"/sports",
     // },
-    {
-        label:"LogIn",
-        url:"/Login",
-    },
-    {
-        label:"SignIn",
-        url:"/Signin",
-    },
+   
 ]
 export default NavData;

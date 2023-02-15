@@ -1,12 +1,16 @@
  .btn-search{
    background-color: green;
    border-radius: 1rem;
+   margin-top: 1.5em;
+   border: none;
+
 
 
 } 
 .ButtonWithIcon{
     font-size: 5em
     
+   
 
 }
 

@@ -8,7 +8,7 @@ import Contact from "../Pages/Contact/Contact";
 import Politics from "../Pages/Politics/Politics";
 import Sports from "../Pages/Sports/Sports";
 import Login from "../Pages/LogIn/Login";
-import Signin from "../Pages/SignIn/Sigin";
+import Signup from "../Pages/SignUp/Signup";
 
 
 
@@ -30,7 +30,7 @@ const Routing=()=>{
           <Route path="/politics" element={<Politics />} />
           <Route path="/sports" element={<Sports />} />
           <Route path="/login" element={<Login/>}/>
-          <Route path="/Signin" element={<Signin/>}/>
+          <Route path="/Signup" element={<Signup/>}/>
           
       </Routes>
         </>
